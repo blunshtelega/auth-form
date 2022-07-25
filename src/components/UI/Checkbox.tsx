@@ -43,7 +43,7 @@ const CheckboxLogin = ({
 }: {
     className?: string
     checked: boolean
-    onChange: (event: any) => void
+    onChange: (event: React.ChangeEvent<HTMLInputElement>) => void
     props?: any[]
 }) => (
     <CheckboxContainer className={className}>
@@ -56,7 +56,7 @@ const CheckboxLogin = ({
 export class Checkbox extends React.Component {
     state = { checked: false }
 
-    handleCheckboxChange = (event:any) => {
+    handleCheckboxChange = (event: React.ChangeEvent<HTMLInputElement>) => {
         this.setState({ checked: event.target.checked })
     }
 

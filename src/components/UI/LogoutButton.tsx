@@ -24,7 +24,7 @@ const LogoutButtonWrapper = styled.div`
 
 export interface ILogoutButton {
     title: string;
-    onClick?: any;
+    onClick?: (event: React.MouseEvent<HTMLElement>) => void;
 }
 
 const LogoutButton: React.FunctionComponent<ILogoutButton> = ({ title, onClick }) => {

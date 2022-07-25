@@ -1,4 +1,5 @@
 import React from "react";
+import { UseFormRegister } from "react-hook-form";
 import styled from "styled-components";
 
 const InputWrapper = styled.div`
@@ -34,7 +35,7 @@ const CommonInputLabel = styled.label`
 `;
 
 export interface IInput {
-    style: any
+    style: any,
     registerName: string,
     label: string,
     register: any,

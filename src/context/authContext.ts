@@ -1,8 +1,8 @@
-import { createContext, useContext } from "react";
+import React, { createContext, useContext } from "react";
 
 export interface IAuthContent {
     isAuth: boolean;
-    setIsAuth: any;
+    setIsAuth: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
 export const GlobalAuthContext = createContext<IAuthContent>({
